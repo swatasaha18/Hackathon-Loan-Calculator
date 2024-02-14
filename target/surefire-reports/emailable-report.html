@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num attn">7</td><td class="num">247,769</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.TC_002_HomeLoanCalculatorTest</td><td><a href="#m0">verify_home_loan</a></td><td rowspan="1">1707715864990</td><td rowspan="1">24695</td></tr><tr class="failedodd"><td rowspan="6">testCases.TC_003_EMICalculatorTest</td><td><a href="#m1">loanTenureValidation</a></td><td rowspan="1">1707715925073</td><td rowspan="1">1</td></tr><tr class="failedodd"><td><a href="#m2">verify_FeesAndCharges_InputAndSlider</a></td><td rowspan="1">1707715924817</td><td rowspan="1">1</td></tr><tr class="failedodd"><td><a href="#m3">verify_InterestRate_InputAndSlider</a></td><td rowspan="1">1707715924241</td><td rowspan="1">1</td></tr><tr class="failedodd"><td><a href="#m4">verify_LoanAmount_InputAndSlider</a></td><td rowspan="1">1707715923869</td><td rowspan="1">6</td></tr><tr class="failedodd"><td><a href="#m5">verify_LoanTenure_InputAndSlider</a></td><td rowspan="1">1707715924524</td><td rowspan="1">1</td></tr><tr class="failedodd"><td><a href="#m6">verify_calculator</a></td><td rowspan="1">1707715903242</td><td rowspan="1">20215</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.TC_001_CarLoanCalculatorTest</td><td><a href="#m7">verify_car_loan_calculator</a></td><td rowspan="1">1707715841983</td><td rowspan="1">4858</td></tr><tr class="passedodd"><td rowspan="6">testCases.TC_004_LoanAmountCalculatorTest</td><td><a href="#m8">loanTenureValidation</a></td><td rowspan="1">1707715992598</td><td rowspan="1">464</td></tr><tr class="passedodd"><td><a href="#m9">verify_EMI_InputAndSlider</a></td><td rowspan="1">1707715948396</td><td rowspan="1">11526</td></tr><tr class="passedodd"><td><a href="#m10">verify_FeesAndCharges_InputAndSlider</a></td><td rowspan="1">1707715985936</td><td rowspan="1">6309</td></tr><tr class="passedodd"><td><a href="#m11">verify_InterestRate_InputAndSlider</a></td><td rowspan="1">1707715960404</td><td rowspan="1">13134</td></tr><tr class="passedodd"><td><a href="#m12">verify_LoanTenure_InputAndSlider</a></td><td rowspan="1">1707715974064</td><td rowspan="1">11445</td></tr><tr class="passedodd"><td><a href="#m13">verify_calculator</a></td><td rowspan="1">1707715940915</td><td rowspan="1">7031</td></tr><tr class="passedeven"><td rowspan="5">testCases.TC_005_LoanTenureCalculatorTest</td><td><a href="#m14">verify_EMI_InputAndSlider</a></td><td rowspan="1">1707716045658</td><td rowspan="1">11463</td></tr><tr class="passedeven"><td><a href="#m15">verify_FeesAndCharges_InputAndSlider</a></td><td rowspan="1">1707716057472</td><td rowspan="1">6140</td></tr><tr class="passedeven"><td><a href="#m16">verify_InterestRate_InputAndSlider</a></td><td rowspan="1">1707716033844</td><td rowspan="1">11441</td></tr><tr class="passedeven"><td><a href="#m17">verify_LoanAmount_InputAndSlider</a></td><td rowspan="1">1707716022096</td><td rowspan="1">11363</td></tr><tr class="passedeven"><td><a href="#m18">verify_calculator</a></td><td rowspan="1">1707716014163</td><td rowspan="1">7425</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">testCases.TC_002_HomeLoanCalculatorTest#verify_home_loan</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;homeprice&apos;]&quot;}
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [90920762f0725f62dfd39da95f360266, findElement {value=//input[@id=&apos;homeprice&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61120}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61120/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 90920762f0725f62dfd39da95f360266
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.clear(Unknown Source)
+	at pageObjects.HomeLoanCalculatorPage.setHomeValue(HomeLoanCalculatorPage.java:67)
+	at testCases.TC_002_HomeLoanCalculatorTest.verify_home_loan(TC_002_HomeLoanCalculatorTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testCases.TC_003_EMICalculatorTest#loanTenureValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at testCases.TC_003_EMICalculatorTest.loanTenureValidation(TC_003_EMICalculatorTest.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testCases.TC_003_EMICalculatorTest#verify_FeesAndCharges_InputAndSlider</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot read field &quot;feesAndCharges&quot; because &quot;this.lcp&quot; is null
+	at testCases.TC_003_EMICalculatorTest.verify_FeesAndCharges_InputAndSlider(TC_003_EMICalculatorTest.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testCases.TC_003_EMICalculatorTest#verify_InterestRate_InputAndSlider</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot read field &quot;interestRate&quot; because &quot;this.lcp&quot; is null
+	at testCases.TC_003_EMICalculatorTest.verify_InterestRate_InputAndSlider(TC_003_EMICalculatorTest.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testCases.TC_003_EMICalculatorTest#verify_LoanAmount_InputAndSlider</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot read field &quot;loanAmount&quot; because &quot;this.lcp&quot; is null
+	at testCases.TC_003_EMICalculatorTest.verify_LoanAmount_InputAndSlider(TC_003_EMICalculatorTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testCases.TC_003_EMICalculatorTest#verify_LoanTenure_InputAndSlider</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot read field &quot;loanTenure&quot; because &quot;this.lcp&quot; is null
+	at testCases.TC_003_EMICalculatorTest.verify_LoanTenure_InputAndSlider(TC_003_EMICalculatorTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testCases.TC_003_EMICalculatorTest#verify_calculator</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@id=&apos;menu-item-dropdown-2696&apos;]&quot;}
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c2e74abf6767a6ebc4176d597153b788, findElement {value=//a[@id=&apos;menu-item-dropdown-2696&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61299/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c2e74abf6767a6ebc4176d597153b788
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+	at pageObjects.DefaultPage.clickCalculators(DefaultPage.java:92)
+	at testCases.TC_003_EMICalculatorTest.verify_calculator(TC_003_EMICalculatorTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testCases.TC_001_CarLoanCalculatorTest#verify_car_loan_calculator</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testCases.TC_004_LoanAmountCalculatorTest#loanTenureValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testCases.TC_004_LoanAmountCalculatorTest#verify_EMI_InputAndSlider</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">testCases.TC_004_LoanAmountCalculatorTest#verify_FeesAndCharges_InputAndSlider</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">testCases.TC_004_LoanAmountCalculatorTest#verify_InterestRate_InputAndSlider</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">testCases.TC_004_LoanAmountCalculatorTest#verify_LoanTenure_InputAndSlider</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">testCases.TC_004_LoanAmountCalculatorTest#verify_calculator</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">testCases.TC_005_LoanTenureCalculatorTest#verify_EMI_InputAndSlider</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">testCases.TC_005_LoanTenureCalculatorTest#verify_FeesAndCharges_InputAndSlider</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">testCases.TC_005_LoanTenureCalculatorTest#verify_InterestRate_InputAndSlider</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">testCases.TC_005_LoanTenureCalculatorTest#verify_LoanAmount_InputAndSlider</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">testCases.TC_005_LoanTenureCalculatorTest#verify_calculator</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

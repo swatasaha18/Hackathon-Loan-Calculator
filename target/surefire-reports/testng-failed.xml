@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testCases.TC_002_HomeLoanCalculatorTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="verify_home_loan"/>
+        </methods>
+      </class> <!-- testCases.TC_002_HomeLoanCalculatorTest -->
+      <class name="testCases.TC_003_EMICalculatorTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loanTenureValidation"/>
+          <include name="verify_InterestRate_InputAndSlider"/>
+          <include name="verify_LoanTenure_InputAndSlider"/>
+          <include name="setup"/>
+          <include name="verify_LoanAmount_InputAndSlider"/>
+          <include name="verify_calculator"/>
+          <include name="verify_FeesAndCharges_InputAndSlider"/>
+        </methods>
+      </class> <!-- testCases.TC_003_EMICalculatorTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

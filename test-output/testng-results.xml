@@ -1,13 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="19" passed="19" failed="0" skipped="0">
+<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-12T09:53:17 IST" name="Suite" finished-at="2024-02-12T09:57:44 IST" duration-ms="267169">
+  <suite started-at="2024-02-13T20:07:37 IST" name="Suite" finished-at="2024-02-13T20:11:56 IST" duration-ms="258527">
     <groups>
+      <group name="regression">
+        <method signature="TC_001_CarLoanCalculatorTest.verify_car_loan_calculator()[pri:2, instance:testCases.TC_001_CarLoanCalculatorTest@43dac38f]" name="verify_car_loan_calculator" class="testCases.TC_001_CarLoanCalculatorTest"/>
+        <method signature="TC_002_HomeLoanCalculatorTest.verify_home_loan()[pri:3, instance:testCases.TC_002_HomeLoanCalculatorTest@7c711375]" name="verify_home_loan" class="testCases.TC_002_HomeLoanCalculatorTest"/>
+        <method signature="TC_003_EMICalculatorTest.loanTenureValidation()[pri:9, instance:testCases.TC_003_EMICalculatorTest@37d4349f]" name="loanTenureValidation" class="testCases.TC_003_EMICalculatorTest"/>
+        <method signature="TC_003_EMICalculatorTest.verify_FeesAndCharges_InputAndSlider()[pri:8, instance:testCases.TC_003_EMICalculatorTest@37d4349f]" name="verify_FeesAndCharges_InputAndSlider" class="testCases.TC_003_EMICalculatorTest"/>
+        <method signature="TC_003_EMICalculatorTest.verify_InterestRate_InputAndSlider()[pri:6, instance:testCases.TC_003_EMICalculatorTest@37d4349f]" name="verify_InterestRate_InputAndSlider" class="testCases.TC_003_EMICalculatorTest"/>
+        <method signature="TC_003_EMICalculatorTest.verify_LoanAmount_InputAndSlider()[pri:5, instance:testCases.TC_003_EMICalculatorTest@37d4349f]" name="verify_LoanAmount_InputAndSlider" class="testCases.TC_003_EMICalculatorTest"/>
+        <method signature="TC_003_EMICalculatorTest.verify_LoanTenure_InputAndSlider()[pri:7, instance:testCases.TC_003_EMICalculatorTest@37d4349f]" name="verify_LoanTenure_InputAndSlider" class="testCases.TC_003_EMICalculatorTest"/>
+        <method signature="TC_004_LoanAmountCalculatorTest.loanTenureValidation()[pri:15, instance:testCases.TC_004_LoanAmountCalculatorTest@434a63ab]" name="loanTenureValidation" class="testCases.TC_004_LoanAmountCalculatorTest"/>
+        <method signature="TC_004_LoanAmountCalculatorTest.verify_EMI_InputAndSlider()[pri:11, instance:testCases.TC_004_LoanAmountCalculatorTest@434a63ab]" name="verify_EMI_InputAndSlider" class="testCases.TC_004_LoanAmountCalculatorTest"/>
+        <method signature="TC_004_LoanAmountCalculatorTest.verify_FeesAndCharges_InputAndSlider()[pri:14, instance:testCases.TC_004_LoanAmountCalculatorTest@434a63ab]" name="verify_FeesAndCharges_InputAndSlider" class="testCases.TC_004_LoanAmountCalculatorTest"/>
+        <method signature="TC_004_LoanAmountCalculatorTest.verify_InterestRate_InputAndSlider()[pri:12, instance:testCases.TC_004_LoanAmountCalculatorTest@434a63ab]" name="verify_InterestRate_InputAndSlider" class="testCases.TC_004_LoanAmountCalculatorTest"/>
+        <method signature="TC_004_LoanAmountCalculatorTest.verify_LoanTenure_InputAndSlider()[pri:13, instance:testCases.TC_004_LoanAmountCalculatorTest@434a63ab]" name="verify_LoanTenure_InputAndSlider" class="testCases.TC_004_LoanAmountCalculatorTest"/>
+        <method signature="TC_005_LoanTenureCalculatorTest.verify_EMI_InputAndSlider()[pri:19, instance:testCases.TC_005_LoanTenureCalculatorTest@6e0f5f7f]" name="verify_EMI_InputAndSlider" class="testCases.TC_005_LoanTenureCalculatorTest"/>
+        <method signature="TC_005_LoanTenureCalculatorTest.verify_FeesAndCharges_InputAndSlider()[pri:20, instance:testCases.TC_005_LoanTenureCalculatorTest@6e0f5f7f]" name="verify_FeesAndCharges_InputAndSlider" class="testCases.TC_005_LoanTenureCalculatorTest"/>
+        <method signature="TC_005_LoanTenureCalculatorTest.verify_InterestRate_InputAndSlider()[pri:18, instance:testCases.TC_005_LoanTenureCalculatorTest@6e0f5f7f]" name="verify_InterestRate_InputAndSlider" class="testCases.TC_005_LoanTenureCalculatorTest"/>
+        <method signature="TC_005_LoanTenureCalculatorTest.verify_LoanAmount_InputAndSlider()[pri:17, instance:testCases.TC_005_LoanTenureCalculatorTest@6e0f5f7f]" name="verify_LoanAmount_InputAndSlider" class="testCases.TC_005_LoanTenureCalculatorTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="TC_001_CarLoanCalculatorTest.verify_inputs_car_loan_calculator()[pri:1, instance:testCases.TC_001_CarLoanCalculatorTest@43dac38f]" name="verify_inputs_car_loan_calculator" class="testCases.TC_001_CarLoanCalculatorTest"/>
+        <method signature="TC_002_HomeLoanCalculatorTest.verify_home_loan()[pri:3, instance:testCases.TC_002_HomeLoanCalculatorTest@7c711375]" name="verify_home_loan" class="testCases.TC_002_HomeLoanCalculatorTest"/>
+        <method signature="TC_003_EMICalculatorTest.verify_calculator_type_opened()[pri:4, instance:testCases.TC_003_EMICalculatorTest@37d4349f]" name="verify_calculator_type_opened" class="testCases.TC_003_EMICalculatorTest"/>
+        <method signature="TC_004_LoanAmountCalculatorTest.verify_calculator_type_opened()[pri:10, instance:testCases.TC_004_LoanAmountCalculatorTest@434a63ab]" name="verify_calculator_type_opened" class="testCases.TC_004_LoanAmountCalculatorTest"/>
+        <method signature="TC_005_LoanTenureCalculatorTest.verify_calculator_type_opened()[pri:16, instance:testCases.TC_005_LoanTenureCalculatorTest@6e0f5f7f]" name="verify_calculator_type_opened" class="testCases.TC_005_LoanTenureCalculatorTest"/>
+      </group> <!-- smoke -->
+      <group name="master">
+        <method signature="TC_001_CarLoanCalculatorTest.verify_inputs_car_loan_calculator()[pri:1, instance:testCases.TC_001_CarLoanCalculatorTest@43dac38f]" name="verify_inputs_car_loan_calculator" class="testCases.TC_001_CarLoanCalculatorTest"/>
+        <method signature="TC_001_CarLoanCalculatorTest.verify_car_loan_calculator()[pri:2, instance:testCases.TC_001_CarLoanCalculatorTest@43dac38f]" name="verify_car_loan_calculator" class="testCases.TC_001_CarLoanCalculatorTest"/>
+        <method signature="TC_002_HomeLoanCalculatorTest.verify_home_loan()[pri:3, instance:testCases.TC_002_HomeLoanCalculatorTest@7c711375]" name="verify_home_loan" class="testCases.TC_002_HomeLoanCalculatorTest"/>
+        <method signature="TC_003_EMICalculatorTest.verify_calculator_type_opened()[pri:4, instance:testCases.TC_003_EMICalculatorTest@37d4349f]" name="verify_calculator_type_opened" class="testCases.TC_003_EMICalculatorTest"/>
+        <method signature="TC_003_EMICalculatorTest.loanTenureValidation()[pri:9, instance:testCases.TC_003_EMICalculatorTest@37d4349f]" name="loanTenureValidation" class="testCases.TC_003_EMICalculatorTest"/>
+        <method signature="TC_003_EMICalculatorTest.verify_FeesAndCharges_InputAndSlider()[pri:8, instance:testCases.TC_003_EMICalculatorTest@37d4349f]" name="verify_FeesAndCharges_InputAndSlider" class="testCases.TC_003_EMICalculatorTest"/>
+        <method signature="TC_003_EMICalculatorTest.verify_InterestRate_InputAndSlider()[pri:6, instance:testCases.TC_003_EMICalculatorTest@37d4349f]" name="verify_InterestRate_InputAndSlider" class="testCases.TC_003_EMICalculatorTest"/>
+        <method signature="TC_003_EMICalculatorTest.verify_LoanAmount_InputAndSlider()[pri:5, instance:testCases.TC_003_EMICalculatorTest@37d4349f]" name="verify_LoanAmount_InputAndSlider" class="testCases.TC_003_EMICalculatorTest"/>
+        <method signature="TC_003_EMICalculatorTest.verify_LoanTenure_InputAndSlider()[pri:7, instance:testCases.TC_003_EMICalculatorTest@37d4349f]" name="verify_LoanTenure_InputAndSlider" class="testCases.TC_003_EMICalculatorTest"/>
+        <method signature="TC_004_LoanAmountCalculatorTest.verify_calculator_type_opened()[pri:10, instance:testCases.TC_004_LoanAmountCalculatorTest@434a63ab]" name="verify_calculator_type_opened" class="testCases.TC_004_LoanAmountCalculatorTest"/>
+        <method signature="TC_004_LoanAmountCalculatorTest.loanTenureValidation()[pri:15, instance:testCases.TC_004_LoanAmountCalculatorTest@434a63ab]" name="loanTenureValidation" class="testCases.TC_004_LoanAmountCalculatorTest"/>
+        <method signature="TC_004_LoanAmountCalculatorTest.verify_EMI_InputAndSlider()[pri:11, instance:testCases.TC_004_LoanAmountCalculatorTest@434a63ab]" name="verify_EMI_InputAndSlider" class="testCases.TC_004_LoanAmountCalculatorTest"/>
+        <method signature="TC_004_LoanAmountCalculatorTest.verify_FeesAndCharges_InputAndSlider()[pri:14, instance:testCases.TC_004_LoanAmountCalculatorTest@434a63ab]" name="verify_FeesAndCharges_InputAndSlider" class="testCases.TC_004_LoanAmountCalculatorTest"/>
+        <method signature="TC_004_LoanAmountCalculatorTest.verify_InterestRate_InputAndSlider()[pri:12, instance:testCases.TC_004_LoanAmountCalculatorTest@434a63ab]" name="verify_InterestRate_InputAndSlider" class="testCases.TC_004_LoanAmountCalculatorTest"/>
+        <method signature="TC_004_LoanAmountCalculatorTest.verify_LoanTenure_InputAndSlider()[pri:13, instance:testCases.TC_004_LoanAmountCalculatorTest@434a63ab]" name="verify_LoanTenure_InputAndSlider" class="testCases.TC_004_LoanAmountCalculatorTest"/>
+        <method signature="TC_005_LoanTenureCalculatorTest.verify_calculator_type_opened()[pri:16, instance:testCases.TC_005_LoanTenureCalculatorTest@6e0f5f7f]" name="verify_calculator_type_opened" class="testCases.TC_005_LoanTenureCalculatorTest"/>
+        <method signature="TC_005_LoanTenureCalculatorTest.verify_EMI_InputAndSlider()[pri:19, instance:testCases.TC_005_LoanTenureCalculatorTest@6e0f5f7f]" name="verify_EMI_InputAndSlider" class="testCases.TC_005_LoanTenureCalculatorTest"/>
+        <method signature="TC_005_LoanTenureCalculatorTest.verify_FeesAndCharges_InputAndSlider()[pri:20, instance:testCases.TC_005_LoanTenureCalculatorTest@6e0f5f7f]" name="verify_FeesAndCharges_InputAndSlider" class="testCases.TC_005_LoanTenureCalculatorTest"/>
+        <method signature="TC_005_LoanTenureCalculatorTest.verify_InterestRate_InputAndSlider()[pri:18, instance:testCases.TC_005_LoanTenureCalculatorTest@6e0f5f7f]" name="verify_InterestRate_InputAndSlider" class="testCases.TC_005_LoanTenureCalculatorTest"/>
+        <method signature="TC_005_LoanTenureCalculatorTest.verify_LoanAmount_InputAndSlider()[pri:17, instance:testCases.TC_005_LoanTenureCalculatorTest@6e0f5f7f]" name="verify_LoanAmount_InputAndSlider" class="testCases.TC_005_LoanTenureCalculatorTest"/>
+      </group> <!-- master -->
     </groups>
-    <test started-at="2024-02-12T09:53:17 IST" name="Test" finished-at="2024-02-12T09:57:44 IST" duration-ms="267169">
+    <test started-at="2024-02-13T20:07:37 IST" name="Test" finished-at="2024-02-13T20:11:56 IST" duration-ms="258527">
       <class name="testCases.TC_005_LoanTenureCalculatorTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_005_LoanTenureCalculatorTest@7c711375]" started-at="2024-02-12T09:56:48 IST" name="setup" finished-at="2024-02-12T09:56:57 IST" duration-ms="9306" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_005_LoanTenureCalculatorTest@6e0f5f7f]" started-at="2024-02-13T20:10:48 IST" name="setup" finished-at="2024-02-13T20:11:01 IST" duration-ms="13266" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,33 +70,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_calculator()[pri:0, instance:testCases.TC_005_LoanTenureCalculatorTest@7c711375]" started-at="2024-02-12T09:56:57 IST" name="verify_calculator" finished-at="2024-02-12T09:57:04 IST" duration-ms="6392" status="PASS">
+        <test-method signature="verify_calculator_type_opened()[pri:16, instance:testCases.TC_005_LoanTenureCalculatorTest@6e0f5f7f]" started-at="2024-02-13T20:11:01 IST" name="verify_calculator_type_opened" finished-at="2024-02-13T20:11:12 IST" duration-ms="11236" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_calculator -->
-        <test-method signature="verify_LoanAmount_InputAndSlider()[pri:1, instance:testCases.TC_005_LoanTenureCalculatorTest@7c711375]" started-at="2024-02-12T09:57:04 IST" name="verify_LoanAmount_InputAndSlider" finished-at="2024-02-12T09:57:15 IST" duration-ms="10889" status="PASS">
+        </test-method> <!-- verify_calculator_type_opened -->
+        <test-method signature="verify_LoanAmount_InputAndSlider()[pri:17, instance:testCases.TC_005_LoanTenureCalculatorTest@6e0f5f7f]" started-at="2024-02-13T20:11:12 IST" name="verify_LoanAmount_InputAndSlider" finished-at="2024-02-13T20:11:23 IST" depends-on-methods="testCases.TC_005_LoanTenureCalculatorTest.verify_calculator_type_opened" duration-ms="11024" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_LoanAmount_InputAndSlider -->
-        <test-method signature="verify_InterestRate_InputAndSlider()[pri:2, instance:testCases.TC_005_LoanTenureCalculatorTest@7c711375]" started-at="2024-02-12T09:57:15 IST" name="verify_InterestRate_InputAndSlider" finished-at="2024-02-12T09:57:26 IST" duration-ms="10922" status="PASS">
+        <test-method signature="verify_InterestRate_InputAndSlider()[pri:18, instance:testCases.TC_005_LoanTenureCalculatorTest@6e0f5f7f]" started-at="2024-02-13T20:11:24 IST" name="verify_InterestRate_InputAndSlider" finished-at="2024-02-13T20:11:35 IST" depends-on-methods="testCases.TC_005_LoanTenureCalculatorTest.verify_calculator_type_opened" duration-ms="11044" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_InterestRate_InputAndSlider -->
-        <test-method signature="verify_EMI_InputAndSlider()[pri:3, instance:testCases.TC_005_LoanTenureCalculatorTest@7c711375]" started-at="2024-02-12T09:57:26 IST" name="verify_EMI_InputAndSlider" finished-at="2024-02-12T09:57:37 IST" duration-ms="10905" status="PASS">
+        <test-method signature="verify_EMI_InputAndSlider()[pri:19, instance:testCases.TC_005_LoanTenureCalculatorTest@6e0f5f7f]" started-at="2024-02-13T20:11:35 IST" name="verify_EMI_InputAndSlider" finished-at="2024-02-13T20:11:46 IST" depends-on-methods="testCases.TC_005_LoanTenureCalculatorTest.verify_calculator_type_opened" duration-ms="11030" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_EMI_InputAndSlider -->
-        <test-method signature="verify_FeesAndCharges_InputAndSlider()[pri:4, instance:testCases.TC_005_LoanTenureCalculatorTest@7c711375]" started-at="2024-02-12T09:57:37 IST" name="verify_FeesAndCharges_InputAndSlider" finished-at="2024-02-12T09:57:43 IST" duration-ms="5825" status="PASS">
+        <test-method signature="verify_FeesAndCharges_InputAndSlider()[pri:20, instance:testCases.TC_005_LoanTenureCalculatorTest@6e0f5f7f]" started-at="2024-02-13T20:11:47 IST" name="verify_FeesAndCharges_InputAndSlider" finished-at="2024-02-13T20:11:53 IST" depends-on-methods="testCases.TC_005_LoanTenureCalculatorTest.verify_calculator_type_opened" duration-ms="6209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_FeesAndCharges_InputAndSlider -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_005_LoanTenureCalculatorTest@7c711375]" started-at="2024-02-12T09:57:43 IST" name="tearDown" finished-at="2024-02-12T09:57:44 IST" duration-ms="1234" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_005_LoanTenureCalculatorTest@6e0f5f7f]" started-at="2024-02-13T20:11:53 IST" name="tearDown" finished-at="2024-02-13T20:11:56 IST" duration-ms="2766" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_005_LoanTenureCalculatorTest -->
       <class name="testCases.TC_004_LoanAmountCalculatorTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_004_LoanAmountCalculatorTest@5a56cdac]" started-at="2024-02-12T09:55:37 IST" name="setup" finished-at="2024-02-12T09:55:46 IST" duration-ms="8901" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_004_LoanAmountCalculatorTest@434a63ab]" started-at="2024-02-13T20:09:39 IST" name="setup" finished-at="2024-02-13T20:09:52 IST" duration-ms="13010" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -65,37 +112,37 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_calculator()[pri:0, instance:testCases.TC_004_LoanAmountCalculatorTest@5a56cdac]" started-at="2024-02-12T09:55:46 IST" name="verify_calculator" finished-at="2024-02-12T09:56:05 IST" duration-ms="19171" status="PASS">
+        <test-method signature="verify_calculator_type_opened()[pri:10, instance:testCases.TC_004_LoanAmountCalculatorTest@434a63ab]" started-at="2024-02-13T20:09:52 IST" name="verify_calculator_type_opened" finished-at="2024-02-13T20:10:04 IST" duration-ms="12166" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_calculator -->
-        <test-method signature="verify_EMI_InputAndSlider()[pri:1, instance:testCases.TC_004_LoanAmountCalculatorTest@5a56cdac]" started-at="2024-02-12T09:56:05 IST" name="verify_EMI_InputAndSlider" finished-at="2024-02-12T09:56:16 IST" duration-ms="10860" status="PASS">
+        </test-method> <!-- verify_calculator_type_opened -->
+        <test-method signature="verify_EMI_InputAndSlider()[pri:11, instance:testCases.TC_004_LoanAmountCalculatorTest@434a63ab]" started-at="2024-02-13T20:10:04 IST" name="verify_EMI_InputAndSlider" finished-at="2024-02-13T20:10:15 IST" depends-on-methods="testCases.TC_004_LoanAmountCalculatorTest.verify_calculator_type_opened" duration-ms="11066" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_EMI_InputAndSlider -->
-        <test-method signature="verify_InterestRate_InputAndSlider()[pri:2, instance:testCases.TC_004_LoanAmountCalculatorTest@5a56cdac]" started-at="2024-02-12T09:56:16 IST" name="verify_InterestRate_InputAndSlider" finished-at="2024-02-12T09:56:27 IST" duration-ms="10987" status="PASS">
+        <test-method signature="verify_InterestRate_InputAndSlider()[pri:12, instance:testCases.TC_004_LoanAmountCalculatorTest@434a63ab]" started-at="2024-02-13T20:10:16 IST" name="verify_InterestRate_InputAndSlider" finished-at="2024-02-13T20:10:27 IST" depends-on-methods="testCases.TC_004_LoanAmountCalculatorTest.verify_calculator_type_opened" duration-ms="11149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_InterestRate_InputAndSlider -->
-        <test-method signature="verify_LoanTenure_InputAndSlider()[pri:3, instance:testCases.TC_004_LoanAmountCalculatorTest@5a56cdac]" started-at="2024-02-12T09:56:27 IST" name="verify_LoanTenure_InputAndSlider" finished-at="2024-02-12T09:56:38 IST" duration-ms="10975" status="PASS">
+        <test-method signature="verify_LoanTenure_InputAndSlider()[pri:13, instance:testCases.TC_004_LoanAmountCalculatorTest@434a63ab]" started-at="2024-02-13T20:10:27 IST" name="verify_LoanTenure_InputAndSlider" finished-at="2024-02-13T20:10:38 IST" depends-on-methods="testCases.TC_004_LoanAmountCalculatorTest.verify_calculator_type_opened" duration-ms="11131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_LoanTenure_InputAndSlider -->
-        <test-method signature="verify_FeesAndCharges_InputAndSlider()[pri:4, instance:testCases.TC_004_LoanAmountCalculatorTest@5a56cdac]" started-at="2024-02-12T09:56:39 IST" name="verify_FeesAndCharges_InputAndSlider" finished-at="2024-02-12T09:56:45 IST" duration-ms="5877" status="PASS">
+        <test-method signature="verify_FeesAndCharges_InputAndSlider()[pri:14, instance:testCases.TC_004_LoanAmountCalculatorTest@434a63ab]" started-at="2024-02-13T20:10:39 IST" name="verify_FeesAndCharges_InputAndSlider" finished-at="2024-02-13T20:10:45 IST" depends-on-methods="testCases.TC_004_LoanAmountCalculatorTest.verify_calculator_type_opened" duration-ms="6103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_FeesAndCharges_InputAndSlider -->
-        <test-method signature="loanTenureValidation()[pri:5, instance:testCases.TC_004_LoanAmountCalculatorTest@5a56cdac]" started-at="2024-02-12T09:56:45 IST" name="loanTenureValidation" finished-at="2024-02-12T09:56:45 IST" duration-ms="423" status="PASS">
+        <test-method signature="loanTenureValidation()[pri:15, instance:testCases.TC_004_LoanAmountCalculatorTest@434a63ab]" started-at="2024-02-13T20:10:45 IST" name="loanTenureValidation" finished-at="2024-02-13T20:10:45 IST" depends-on-methods="testCases.TC_004_LoanAmountCalculatorTest.verify_calculator_type_opened" duration-ms="338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loanTenureValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_004_LoanAmountCalculatorTest@5a56cdac]" started-at="2024-02-12T09:56:46 IST" name="tearDown" finished-at="2024-02-12T09:56:48 IST" duration-ms="2199" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_004_LoanAmountCalculatorTest@434a63ab]" started-at="2024-02-13T20:10:46 IST" name="tearDown" finished-at="2024-02-13T20:10:48 IST" duration-ms="1891" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_004_LoanAmountCalculatorTest -->
       <class name="testCases.TC_003_EMICalculatorTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_003_EMICalculatorTest@593aaf41]" started-at="2024-02-12T09:54:37 IST" name="setup" finished-at="2024-02-12T09:54:47 IST" duration-ms="9860" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_003_EMICalculatorTest@37d4349f]" started-at="2024-02-13T20:08:35 IST" name="setup" finished-at="2024-02-13T20:08:45 IST" duration-ms="10166" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -111,37 +158,37 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_calculator()[pri:0, instance:testCases.TC_003_EMICalculatorTest@593aaf41]" started-at="2024-02-12T09:54:47 IST" name="verify_calculator" finished-at="2024-02-12T09:54:53 IST" duration-ms="6594" status="PASS">
+        <test-method signature="verify_calculator_type_opened()[pri:4, instance:testCases.TC_003_EMICalculatorTest@37d4349f]" started-at="2024-02-13T20:08:45 IST" name="verify_calculator_type_opened" finished-at="2024-02-13T20:08:56 IST" duration-ms="10842" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_calculator -->
-        <test-method signature="verify_LoanAmount_InputAndSlider()[pri:1, instance:testCases.TC_003_EMICalculatorTest@593aaf41]" started-at="2024-02-12T09:54:54 IST" name="verify_LoanAmount_InputAndSlider" finished-at="2024-02-12T09:55:05 IST" duration-ms="10998" status="PASS">
+        </test-method> <!-- verify_calculator_type_opened -->
+        <test-method signature="verify_LoanAmount_InputAndSlider()[pri:5, instance:testCases.TC_003_EMICalculatorTest@37d4349f]" started-at="2024-02-13T20:08:56 IST" name="verify_LoanAmount_InputAndSlider" finished-at="2024-02-13T20:09:07 IST" depends-on-methods="testCases.TC_003_EMICalculatorTest.verify_calculator_type_opened" duration-ms="11063" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_LoanAmount_InputAndSlider -->
-        <test-method signature="verify_InterestRate_InputAndSlider()[pri:2, instance:testCases.TC_003_EMICalculatorTest@593aaf41]" started-at="2024-02-12T09:55:05 IST" name="verify_InterestRate_InputAndSlider" finished-at="2024-02-12T09:55:17 IST" duration-ms="11724" status="PASS">
+        <test-method signature="verify_InterestRate_InputAndSlider()[pri:6, instance:testCases.TC_003_EMICalculatorTest@37d4349f]" started-at="2024-02-13T20:09:07 IST" name="verify_InterestRate_InputAndSlider" finished-at="2024-02-13T20:09:18 IST" depends-on-methods="testCases.TC_003_EMICalculatorTest.verify_calculator_type_opened" duration-ms="11002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_InterestRate_InputAndSlider -->
-        <test-method signature="verify_LoanTenure_InputAndSlider()[pri:3, instance:testCases.TC_003_EMICalculatorTest@593aaf41]" started-at="2024-02-12T09:55:17 IST" name="verify_LoanTenure_InputAndSlider" finished-at="2024-02-12T09:55:28 IST" duration-ms="11582" status="PASS">
+        <test-method signature="verify_LoanTenure_InputAndSlider()[pri:7, instance:testCases.TC_003_EMICalculatorTest@37d4349f]" started-at="2024-02-13T20:09:19 IST" name="verify_LoanTenure_InputAndSlider" finished-at="2024-02-13T20:09:30 IST" depends-on-methods="testCases.TC_003_EMICalculatorTest.verify_calculator_type_opened" duration-ms="10925" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_LoanTenure_InputAndSlider -->
-        <test-method signature="verify_FeesAndCharges_InputAndSlider()[pri:4, instance:testCases.TC_003_EMICalculatorTest@593aaf41]" started-at="2024-02-12T09:55:29 IST" name="verify_FeesAndCharges_InputAndSlider" finished-at="2024-02-12T09:55:35 IST" duration-ms="5959" status="PASS">
+        <test-method signature="verify_FeesAndCharges_InputAndSlider()[pri:8, instance:testCases.TC_003_EMICalculatorTest@37d4349f]" started-at="2024-02-13T20:09:30 IST" name="verify_FeesAndCharges_InputAndSlider" finished-at="2024-02-13T20:09:36 IST" depends-on-methods="testCases.TC_003_EMICalculatorTest.verify_calculator_type_opened" duration-ms="6020" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_FeesAndCharges_InputAndSlider -->
-        <test-method signature="loanTenureValidation()[pri:5, instance:testCases.TC_003_EMICalculatorTest@593aaf41]" started-at="2024-02-12T09:55:35 IST" name="loanTenureValidation" finished-at="2024-02-12T09:55:35 IST" duration-ms="350" status="PASS">
+        <test-method signature="loanTenureValidation()[pri:9, instance:testCases.TC_003_EMICalculatorTest@37d4349f]" started-at="2024-02-13T20:09:36 IST" name="loanTenureValidation" finished-at="2024-02-13T20:09:36 IST" depends-on-methods="testCases.TC_003_EMICalculatorTest.verify_calculator_type_opened" duration-ms="354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loanTenureValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_003_EMICalculatorTest@593aaf41]" started-at="2024-02-12T09:55:36 IST" name="tearDown" finished-at="2024-02-12T09:55:37 IST" duration-ms="1140" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_003_EMICalculatorTest@37d4349f]" started-at="2024-02-13T20:09:37 IST" name="tearDown" finished-at="2024-02-13T20:09:39 IST" duration-ms="1655" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_003_EMICalculatorTest -->
       <class name="testCases.TC_002_HomeLoanCalculatorTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_002_HomeLoanCalculatorTest@485966cc]" started-at="2024-02-12T09:54:01 IST" name="setup" finished-at="2024-02-12T09:54:11 IST" duration-ms="10415" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_002_HomeLoanCalculatorTest@7c711375]" started-at="2024-02-13T20:08:00 IST" name="setup" finished-at="2024-02-13T20:08:10 IST" duration-ms="10154" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -157,17 +204,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_home_loan()[pri:0, instance:testCases.TC_002_HomeLoanCalculatorTest@485966cc]" started-at="2024-02-12T09:54:11 IST" name="verify_home_loan" finished-at="2024-02-12T09:54:35 IST" duration-ms="23757" status="PASS">
+        <test-method signature="verify_home_loan()[pri:3, instance:testCases.TC_002_HomeLoanCalculatorTest@7c711375]" started-at="2024-02-13T20:08:10 IST" name="verify_home_loan" finished-at="2024-02-13T20:08:33 IST" duration-ms="23059" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_home_loan -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_002_HomeLoanCalculatorTest@485966cc]" started-at="2024-02-12T09:54:36 IST" name="tearDown" finished-at="2024-02-12T09:54:37 IST" duration-ms="1257" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_002_HomeLoanCalculatorTest@7c711375]" started-at="2024-02-13T20:08:33 IST" name="tearDown" finished-at="2024-02-13T20:08:35 IST" duration-ms="1223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_002_HomeLoanCalculatorTest -->
       <class name="testCases.TC_001_CarLoanCalculatorTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_001_CarLoanCalculatorTest@e15b7e8]" started-at="2024-02-12T09:53:19 IST" name="setup" finished-at="2024-02-12T09:53:35 IST" duration-ms="16620" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_001_CarLoanCalculatorTest@43dac38f]" started-at="2024-02-13T20:07:38 IST" name="setup" finished-at="2024-02-13T20:07:55 IST" duration-ms="17013" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -183,11 +230,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_car_loan_calculator()[pri:1, instance:testCases.TC_001_CarLoanCalculatorTest@e15b7e8]" started-at="2024-02-12T09:53:35 IST" name="verify_car_loan_calculator" finished-at="2024-02-12T09:53:59 IST" duration-ms="23686" status="PASS">
+        <test-method signature="verify_inputs_car_loan_calculator()[pri:1, instance:testCases.TC_001_CarLoanCalculatorTest@43dac38f]" started-at="2024-02-13T20:07:55 IST" name="verify_inputs_car_loan_calculator" finished-at="2024-02-13T20:07:57 IST" duration-ms="2106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_inputs_car_loan_calculator -->
+        <test-method signature="verify_car_loan_calculator()[pri:2, instance:testCases.TC_001_CarLoanCalculatorTest@43dac38f]" started-at="2024-02-13T20:07:58 IST" name="verify_car_loan_calculator" finished-at="2024-02-13T20:07:58 IST" depends-on-methods="testCases.TC_001_CarLoanCalculatorTest.verify_inputs_car_loan_calculator" duration-ms="476" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_car_loan_calculator -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_001_CarLoanCalculatorTest@e15b7e8]" started-at="2024-02-12T09:54:00 IST" name="tearDown" finished-at="2024-02-12T09:54:01 IST" duration-ms="1493" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_001_CarLoanCalculatorTest@43dac38f]" started-at="2024-02-13T20:07:59 IST" name="tearDown" finished-at="2024-02-13T20:08:00 IST" duration-ms="1271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
