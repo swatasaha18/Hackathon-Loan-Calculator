@@ -8,23 +8,13 @@
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC_005_LoanTenureCalculatorTest">
-        <methods>
-          <include name="verify_EMI_InputAndSlider"/>
-          <include name="verify_InterestRate_InputAndSlider"/>
-          <include name="tearDown"/>
-          <include name="verify_LoanAmount_InputAndSlider"/>
-          <include name="setup"/>
-          <include name="verify_calculator_type_opened"/>
-        </methods>
-      </class> <!-- testCases.TC_005_LoanTenureCalculatorTest -->
-      <class name="testCases.TC_003_EMICalculatorTest">
+      <class name="testCases.TC_002_HomeLoanCalculatorTest">
         <methods>
           <include name="tearDown"/>
-          <include name="verify_LoanTenure_InputAndSlider"/>
           <include name="setup"/>
+          <include name="verify_home_loan"/>
         </methods>
-      </class> <!-- testCases.TC_003_EMICalculatorTest -->
+      </class> <!-- testCases.TC_002_HomeLoanCalculatorTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

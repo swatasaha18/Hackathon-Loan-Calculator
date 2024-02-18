@@ -1,5 +1,6 @@
 package pageObjects;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -8,9 +9,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 
+import utilities.ExcelUtility;
+
 public class HomeLoanCalculatorPage extends BasePage {
 	WebDriver driver;
 	JavascriptExecutor js;
+	ExcelUtility xlutil = new ExcelUtility(".\\testData\\DataInput.xlsx");
 
 	public HomeLoanCalculatorPage(WebDriver driver) {
 		super(driver);
@@ -62,37 +66,44 @@ public class HomeLoanCalculatorPage extends BasePage {
 	@FindAll(@FindBy(xpath = "//*[@id='paymentschedule']//tr[@class='row no-margin yearlypaymentdetails']"))
 	public List<WebElement> tableData;
 
-	public void setHomeValue() {
+	public void setHomeValue() throws IOException {
 		homeValue.clear();
-		homeValue.sendKeys("9000000");
+		String hv = xlutil.getCellData("TC_002_HomeLoan", 1, 0);
+		homeValue.sendKeys(hv);
 	}
 
-	public void setMargin() {
+	public void setMargin() throws IOException {
 		marginORDownPayment.clear();
-		marginORDownPayment.sendKeys("30");
+		String mdp = xlutil.getCellData("TC_002_HomeLoan", 1, 1);
+		marginORDownPayment.sendKeys(mdp);
 	}
 
-	public void setLoanInsurance() {
+	public void setLoanInsurance() throws IOException {
 		loanInsurance.clear();
-		loanInsurance.sendKeys("100");
+		String li = xlutil.getCellData("TC_002_HomeLoan", 1, 2);
+		loanInsurance.sendKeys(li);
 	}
 
-	public void setLoanAmount() {
+	public void setLoanAmount() throws IOException {
 		loanAmount.clear();
-		loanAmount.sendKeys("6300100");
+		String la = xlutil.getCellData("TC_002_HomeLoan", 1, 3);
+		loanAmount.sendKeys(la);
 	}
 
-	public void setInterestRate() {
-		js.executeScript("arguments[0].value='10'", interestRate);
+	public void setInterestRate() throws IOException {
+		String ir = xlutil.getCellData("TC_002_HomeLoan", 1, 4);
+		js.executeScript("arguments[0].value = arguments[1]", interestRate, ir);
 	}
 
-	public void setLoanTenure() {
-		js.executeScript("arguments[0].value='10'", loanTenure);
+	public void setLoanTenure() throws IOException {
+		String lt = xlutil.getCellData("TC_002_HomeLoan", 1, 5);
+		js.executeScript("arguments[0].value= arguments[1]", loanTenure, lt);
 	}
 
-	public void setLoanFeesCharges() {
+	public void setLoanFeesCharges() throws IOException {
 		loanFeesCharges.clear();
-		loanFeesCharges.sendKeys("0.27");
+		String lfc = xlutil.getCellData("TC_002_HomeLoan", 1, 6);
+		loanFeesCharges.sendKeys(lfc);
 	}
 
 	public void setStartMonthYear() {
@@ -100,24 +111,28 @@ public class HomeLoanCalculatorPage extends BasePage {
 		currentMonth.click();
 	}
 
-	public void setOneTimeExpenses() {
+	public void setOneTimeExpenses() throws IOException {
 		onetimeExpenses.clear();
-		onetimeExpenses.sendKeys("15");
+		String ote = xlutil.getCellData("TC_002_HomeLoan", 1, 7);
+		onetimeExpenses.sendKeys(ote);
 	}
 
-	public void setPropertyTaxes() {
+	public void setPropertyTaxes() throws IOException {
 		propertyTaxes.clear();
-		propertyTaxes.sendKeys("0.3");
+		String pt = xlutil.getCellData("TC_002_HomeLoan", 1, 8);
+		propertyTaxes.sendKeys(pt);
 	}
 
-	public void setHomeInsurance() {
+	public void setHomeInsurance() throws IOException {
 		homeInsurance.clear();
-		homeInsurance.sendKeys("0.06");
+		String hi = xlutil.getCellData("TC_002_HomeLoan", 1, 9);
+		homeInsurance.sendKeys(hi);
 	}
 
-	public void setMaintenance() {
+	public void setMaintenance() throws IOException {
 		maintenance.clear();
-		maintenance.sendKeys("2000");
+		String m = xlutil.getCellData("TC_002_HomeLoan", 1, 10);
+		maintenance.sendKeys(m);
 	}
 
 	public int getNoOfRows() {

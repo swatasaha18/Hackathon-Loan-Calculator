@@ -25,7 +25,7 @@ public class TC_004_LoanAmountCalculatorTest extends BaseClass {
 			String result = lcp.activeCalculator.getText().replaceAll("\n", " ").trim();
 			logger.info("Validating whether Loan Amount Calculators is opened or not...");
 			Assert.assertEquals(result, "Loan Amount Calculator");
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 		} catch (Exception e) {
 			Assert.fail("An exception occured :" + e.getMessage());
 			logger.error("Test failed...");
@@ -33,18 +33,16 @@ public class TC_004_LoanAmountCalculatorTest extends BaseClass {
 	}
 
 	@Test(priority = 11, groups = { "regression" }, dependsOnMethods = { "verify_calculator_type_opened" })
-	public void verify_EMI_InputAndSlider() throws InterruptedException {
+	public void verify_EMI_InputAndSlider() {
 		try {
 			logger.info("Entering EMI in input box...");
 			enterValue(lcp.eMI, "60000");
 			logger.info("Validating UI and proper functioning of EMI input box...");
 			assertInputBox(lcp.eMI, 60000, "EMI");
-			Thread.sleep(5000);
 			logger.info("Moving EMI slider to given value...");
 			moveSlider(lcp.loanemislider, 0, 100000, 75000);
 			logger.info("Validating UI and proper functioning of EMI slider...");
 			assertSlider(lcp.eMI, lcp.loanemislider, 75000, "EMI");
-			Thread.sleep(5000);
 		} catch (Exception e) {
 			Assert.fail("An exception occured :" + e.getMessage());
 			logger.error("Test failed...");
@@ -52,18 +50,16 @@ public class TC_004_LoanAmountCalculatorTest extends BaseClass {
 	}
 
 	@Test(priority = 12, groups = { "regression" }, dependsOnMethods = { "verify_calculator_type_opened" })
-	public void verify_InterestRate_InputAndSlider() throws InterruptedException {
+	public void verify_InterestRate_InputAndSlider() {
 		try {
 			logger.info("Entering Interest Rate in input box...");
 			enterValue(lcp.interestRate, "9");
 			logger.info("Validating UI and proper functioning of Interest Rate input box...");
 			assertInputBox(lcp.interestRate, 9, "Interest Rate");
-			Thread.sleep(5000);
 			logger.info("Moving Interest Rate slider to given value...");
 			moveSlider(lcp.interestslider, 0, 20, 15);
 			logger.info("Validating UI and proper functioning of Interest Rate slider...");
 			assertSlider(lcp.interestRate, lcp.interestslider, 15, "Interest Rate");
-			Thread.sleep(5000);
 		} catch (Exception e) {
 			Assert.fail("An exception occured :" + e.getMessage());
 			logger.error("Test failed...");
@@ -71,19 +67,17 @@ public class TC_004_LoanAmountCalculatorTest extends BaseClass {
 	}
 
 	@Test(priority = 13, groups = { "regression" }, dependsOnMethods = { "verify_calculator_type_opened" })
-	public void verify_LoanTenure_InputAndSlider() throws InterruptedException {
+	public void verify_LoanTenure_InputAndSlider() {
 		try {
 			scroll(lcp.loanTenure);
 			logger.info("Entering Loan Tenure in input box...");
 			enterValue(lcp.loanTenure, "18");
 			logger.info("Validating UI and proper functioning of Loan Tenure input box...");
 			assertInputBox(lcp.loanTenure, 18, "Loan Tenure");
-			Thread.sleep(5000);
 			logger.info("Moving Loan Tenure slider to given value...");
 			moveSlider(lcp.loantenureslider, 0, 30, 15);
 			logger.info("Validating UI and proper functioning of Loan Tenure slider...");
 			assertSlider(lcp.loanTenure, lcp.loantenureslider, 15, "Loan Tenure");
-			Thread.sleep(5000);
 		} catch (Exception e) {
 			Assert.fail("An exception occured :" + e.getMessage());
 			logger.error("Test failed...");
@@ -91,13 +85,12 @@ public class TC_004_LoanAmountCalculatorTest extends BaseClass {
 	}
 
 	@Test(priority = 14, groups = { "regression" }, dependsOnMethods = { "verify_calculator_type_opened" })
-	public void verify_FeesAndCharges_InputAndSlider() throws InterruptedException {
+	public void verify_FeesAndCharges_InputAndSlider() {
 		try {
 			logger.info("Entering Fees and Charges in input box...");
 			enterValue(lcp.feesAndCharges, "10000");
 			logger.info("Validating UI and proper functioning of Fees and Charges input box...");
 			assertInputBox(lcp.feesAndCharges, 10000, "Fees and Charges");
-			Thread.sleep(5000);
 			logger.info("Moving Fees and Charges slider to given value...");
 			moveSlider(lcp.loanfeesslider, 0, 100000, 6000);
 			logger.info("Validating UI and proper functioning of Fees and Charges slider...");

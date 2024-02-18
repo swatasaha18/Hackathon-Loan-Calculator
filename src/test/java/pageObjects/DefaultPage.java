@@ -1,13 +1,18 @@
 package pageObjects;
 
+import java.io.IOException;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import utilities.ExcelUtility;
+
 public class DefaultPage extends BasePage {
 	WebDriver driver;
 	JavascriptExecutor js;
+	ExcelUtility xlutil = new ExcelUtility(".\\testData\\DataInput.xlsx");
 
 	public DefaultPage(WebDriver driver) {
 		super(driver);
@@ -54,17 +59,20 @@ public class DefaultPage extends BasePage {
 		carLoan.click();
 	}
 
-	public void setCarLoanAmount() {
+	public void setCarLoanAmount() throws IOException {
 		carLoanAmount.clear();
-		carLoanAmount.sendKeys("1500000");
+		String amount = xlutil.getCellData("TC_001_CarLoan", 1, 0);
+		carLoanAmount.sendKeys(amount);
 	}
 
-	public void setInterestRate() {
-		js.executeScript("arguments[0].value='9.5'", interestRate);
+	public void setInterestRate() throws IOException {
+		String interest = xlutil.getCellData("TC_001_CarLoan", 1, 1);
+		js.executeScript("arguments[0].value=arguments[1]", interestRate, interest);
 	}
 
-	public void setLoanTenure() {
-		js.executeScript("arguments[0].value='1'", loanTenure);
+	public void setLoanTenure() throws IOException {
+		String tenure = xlutil.getCellData("TC_001_CarLoan", 1, 2);
+		js.executeScript("arguments[0].value=arguments[1]", loanTenure, tenure);
 	}
 
 	public void clickYr() {
